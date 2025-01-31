@@ -10,7 +10,8 @@ CORS(app)  # Enable CORS for all routes
 @app.route("/", methods=["GET"])
 def public_api():
     """Returns email, current time in ISO 8601 format, and GitHub repo URL."""
-    current_time = datetime.now(pytz.utc).isoformat().replace("+00:00", "Z")
+    now = datetime.now().replace(second=0, microsecond=0)
+    current_time = now.isoformat() + "Z"
     response_data = {
         "email":"marcelinusilonuba21@gmail.com",
         "github_url":"https://github.com/Meskana/HNG12-task0",
