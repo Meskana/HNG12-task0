@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 
-@app.route("/api/public", methods=["GET"])
+@app.route("/", methods=["GET"])
 def public_api():
     """Returns email, current time in ISO 8601 format, and GitHub repo URL."""
     response_data = {
