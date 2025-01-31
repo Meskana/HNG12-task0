@@ -1,6 +1,7 @@
 Public API - Flask with CORS Support
 
 🚀 A simple public API built with Flask, handling CORS, and returning email, current time (ISO 8601), and GitHub repo in JSON format.
+python: https://hng.tech/hire/python-developers
 
 📌 Features:
 ✅ RESTful API with JSON response
